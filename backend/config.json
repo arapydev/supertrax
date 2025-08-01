@@ -1,0 +1,16 @@
+{
+    "EURUSD": {
+        "auto_trading": false,
+        "lot_size": 0.01,
+        "sl_pips": 10,
+        "tp_pips": 30,
+        "strategy": "FractalBreakout"
+    },
+    "GBPUSD": {
+        "auto_trading": false,
+        "lot_size": 0.01,
+        "sl_pips": 15,
+        "tp_pips": 45,
+        "strategy": "FractalBreakout"
+    }
+}

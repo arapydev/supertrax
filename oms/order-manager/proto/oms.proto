@@ -1,0 +1,28 @@
+// Especifica la versión de la sintaxis que estamos usando.
+syntax = "proto3";
+
+// Definimos un paquete para evitar colisiones de nombres, como un namespace.
+package oms;
+
+// El servicio principal de nuestro Order Management System.
+service OrderManager {
+  // Definimos una "llamada a procedimiento remoto" (RPC) llamada SendTradeOrder.
+  // Recibe un mensaje TradeRequest y devuelve un mensaje TradeResponse.
+  rpc SendTradeOrder (TradeRequest) returns (TradeResponse);
+}
+
+// El mensaje que el backend enviará al OMS para solicitar una operación.
+message TradeRequest {
+  string instrument = 1; // Ej: "EURUSD"
+  string side = 2;       // Ej: "BUY" o "SELL"
+  double volume = 3;     // Ej: 0.01 (lotes)
+  double stop_loss = 4;  // Precio de Stop Loss
+  double take_profit = 5;// Precio de Take Profit
+}
+
+// El mensaje que el OMS devolverá al backend como acuse de recibo.
+message TradeResponse {
+  bool success = 1;         // ¿Se aceptó la orden para su procesamiento?
+  string order_id = 2;      // Un ID único para la orden, si se generó.
+  string message = 3;       // Un mensaje de estado, ej: "Orden recibida" o "Error".
+}

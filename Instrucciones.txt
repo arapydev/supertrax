@@ -1,0 +1,21 @@
+INSTRUCCIONES DE INSTALACIÓN - TRADING APP V1.0
+
+Hola [Nombre del Cliente],
+
+Sigue estos pasos para instalar y ejecutar la aplicación.
+
+PASO 1: INSTALAR LA APLICACIÓN DE ESCRITORIO
+1.  Ejecuta el archivo "Trading Dashboard Setup 1.0.0.exe".
+2.  Sigue los pasos del instalador. Se creará un icono en tu escritorio.
+
+PASO 2: CONFIGURAR EL SERVIDOR (SOLO LA PRIMERA VEZ)
+1.  Abre la carpeta "backend".
+2.  Haz doble clic en el archivo "setup.bat" y espera a que termine.
+    (Crearemos este archivo en el siguiente paso).
+
+PASO 3: EJECUTAR LA APLICACIÓN
+1.  Asegúrate de que tu terminal de MetaTrader 5 esté abierta y con la sesión iniciada.
+2.  Ve a la carpeta "backend" y haz doble clic en "start_server.bat". Se abrirá una ventana negra (la consola del servidor). DÉJALA ABIERTA.
+3.  Ahora, ejecuta la aplicación "Trading Dashboard" desde el icono de tu escritorio.
+
+¡Listo!

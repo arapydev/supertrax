@@ -1,0 +1,25 @@
+# Archivos de configuración y logs (¡MUY IMPORTANTE!)
+trading_config.json
+trading_log.log
+
+# Entorno virtual de Python
+/backend/venv/
+
+# Archivos compilados y caché de Python
+__pycache__/
+*.pyc
+
+# Dependencias de Node.js
+/frontend/desktop-app/node_modules/
+
+# Archivos de construcción del frontend
+/frontend/desktop-app/dist/
+/frontend/desktop-app/release/
+/frontend/desktop-app/out/
+
+# Archivos de construcción de Rust
+/oms/order-manager/target/
+
+# Archivos del sistema operativo y editores
+.DS_Store
+.vscode/

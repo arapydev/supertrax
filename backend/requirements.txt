@@ -1,0 +1,8 @@
+fastapi[all]
+MetaTrader5
+setuptools
+numpy<2.0
+pandas-ta==0.3.14b0
+grpcio
+grpcio-tools
+jupyterlab
